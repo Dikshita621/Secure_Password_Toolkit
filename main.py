@@ -38,5 +38,34 @@ subtitle = ctk.CTkLabel(
 subtitle.pack()
 
 # Run
+# -------------------------------
+# Main Frame
+# -------------------------------
 
+main_frame = ctk.CTkFrame(app)
+
+main_frame.pack(
+    fill="both",
+    expand=True,
+    padx=20,
+    pady=20
+)
+
+generator_frame = ctk.CTkFrame(main_frame)
+
+generator_frame.pack(
+    side="left",
+    fill="both",
+    expand=True,
+    padx=(0,10)
+)
+
+checker_frame = ctk.CTkFrame(main_frame)
+
+checker_frame.pack(
+    side="right",
+    fill="both",
+    expand=True,
+    padx=(10,0)
+)
 app.mainloop()
